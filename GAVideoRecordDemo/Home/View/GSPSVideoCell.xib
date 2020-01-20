@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GSPSVideoCell" id="KGk-i7-Jjw" customClass="GSPSVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_default_goods" translatesAutoresizingMaskIntoConstraints="NO" id="T5i-SX-pFc">
+                        <rect key="frame" x="10" y="0.0" width="300" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="5Sa-fC-Aun"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVf-Ur-D2h">
+                        <rect key="frame" x="140" y="80" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="8XO-sB-Hu8"/>
+                            <constraint firstAttribute="width" constant="40" id="GUo-Iz-a9h"/>
+                        </constraints>
+                        <state key="normal" image="icon_image_jsviedo"/>
+                        <connections>
+                            <action selector="tapPlayButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ec3-Yb-srD"/>
+                        </connections>
+                    </button>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-cC-gpz" userLabel="maskV">
+                        <rect key="frame" x="10" y="0.0" width="300" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ion-Ie-PH6">
+                        <rect key="frame" x="250" y="180" width="60" height="20"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Pv8-Bq-8lc"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="pEP-jo-ldr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1O-8f-8TA">
+                        <rect key="frame" x="278" y="0.0" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ATl-P2-Gav"/>
+                            <constraint firstAttribute="width" constant="32" id="mh6-Dh-KIv"/>
+                        </constraints>
+                        <state key="normal" image="fb-rubish"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="T5i-SX-pFc" secondAttribute="bottom" id="Mwl-UW-GLs"/>
+                    <constraint firstItem="7T5-cC-gpz" firstAttribute="top" secondItem="T5i-SX-pFc" secondAttribute="top" id="Uio-JR-zwZ"/>
+                    <constraint firstItem="fVf-Ur-D2h" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WAP-K3-2Cc"/>
+                    <constraint firstItem="ion-Ie-PH6" firstAttribute="bottom" secondItem="T5i-SX-pFc" secondAttribute="bottom" id="Ye1-9E-F67"/>
+                    <constraint firstItem="G1O-8f-8TA" firstAttribute="trailing" secondItem="T5i-SX-pFc" secondAttribute="trailing" id="cev-cc-tvF"/>
+                    <constraint firstItem="T5i-SX-pFc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d7i-hx-kP0"/>
+                    <constraint firstItem="T5i-SX-pFc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="n9b-WI-W5l"/>
+                    <constraint firstItem="G1O-8f-8TA" firstAttribute="top" secondItem="T5i-SX-pFc" secondAttribute="top" id="oAE-Il-sbY"/>
+                    <constraint firstItem="fVf-Ur-D2h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sWz-aT-4FH"/>
+                    <constraint firstItem="7T5-cC-gpz" firstAttribute="trailing" secondItem="T5i-SX-pFc" secondAttribute="trailing" id="uv5-Q9-mNE"/>
+                    <constraint firstItem="7T5-cC-gpz" firstAttribute="leading" secondItem="T5i-SX-pFc" secondAttribute="leading" id="xHI-C4-Fbz"/>
+                    <constraint firstAttribute="trailing" secondItem="T5i-SX-pFc" secondAttribute="trailing" constant="10" id="xtn-dj-xaR"/>
+                    <constraint firstItem="7T5-cC-gpz" firstAttribute="bottom" secondItem="T5i-SX-pFc" secondAttribute="bottom" id="yAh-Pq-zdD"/>
+                    <constraint firstItem="ion-Ie-PH6" firstAttribute="trailing" secondItem="T5i-SX-pFc" secondAttribute="trailing" id="yRc-hd-etv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maskV" destination="7T5-cC-gpz" id="PMx-Gn-UtJ"/>
+                <outlet property="timeLbl" destination="ion-Ie-PH6" id="h5y-Uf-XyG"/>
+                <outlet property="videoImg" destination="T5i-SX-pFc" id="Ck2-qx-fHb"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="app_default_goods" width="200" height="200"/>
+        <image name="fb-rubish" width="15" height="15"/>
+        <image name="icon_image_jsviedo" width="40" height="40"/>
+    </resources>
+</document>

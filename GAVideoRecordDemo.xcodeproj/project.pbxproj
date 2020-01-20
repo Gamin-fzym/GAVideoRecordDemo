@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F5171E23D3F46E00CDC595 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5171D23D3F46E00CDC595 /* AppDelegate.m */; };
+		18F5172923D3F47000CDC595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F5172823D3F47000CDC595 /* Assets.xcassets */; };
+		18F5172C23D3F47000CDC595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5172A23D3F47000CDC595 /* LaunchScreen.storyboard */; };
+		18F5172F23D3F47000CDC595 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5172E23D3F47000CDC595 /* main.m */; };
+		18F5173923D3F47000CDC595 /* GAVideoRecordDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5173823D3F47000CDC595 /* GAVideoRecordDemoTests.m */; };
+		18F5174423D3F47100CDC595 /* GAVideoRecordDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5174323D3F47100CDC595 /* GAVideoRecordDemoUITests.m */; };
+		18F5175B23D3F51C00CDC595 /* GSRecordEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5175323D3F51C00CDC595 /* GSRecordEngine.m */; };
+		18F5175C23D3F51C00CDC595 /* GSRecordVideoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F5175623D3F51C00CDC595 /* GSRecordVideoController.xib */; };
+		18F5175D23D3F51C00CDC595 /* GSRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5175823D3F51C00CDC595 /* GSRecordProgressView.m */; };
+		18F5175E23D3F51C00CDC595 /* GSRecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5175923D3F51C00CDC595 /* GSRecordEncoder.m */; };
+		18F5175F23D3F51C00CDC595 /* GSRecordVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5175A23D3F51C00CDC595 /* GSRecordVideoController.m */; };
+		18F5176223D3F65A00CDC595 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5176123D3F65A00CDC595 /* MediaPlayer.framework */; };
+		18F5176423D3F65F00CDC595 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5176323D3F65F00CDC595 /* AVFoundation.framework */; };
+		18F5176623D3F66E00CDC595 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5176523D3F66E00CDC595 /* MobileCoreServices.framework */; };
+		18F5176A23D3F88E00CDC595 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5176923D3F88E00CDC595 /* UIView+Toast.m */; };
+		18F5177223D3FD8B00CDC595 /* GSPSVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5177123D3FD8B00CDC595 /* GSPSVideoModel.m */; };
+		18F517FB23D4092900CDC595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F517F923D4092900CDC595 /* HomeViewController.m */; };
+		18F517FC23D4092900CDC595 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F517FA23D4092900CDC595 /* HomeViewController.xib */; };
+		18F5181D23D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5180423D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		18F5181E23D41A9900CDC595 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5180D23D41A9900CDC595 /* ViewController+MASAdditions.m */; };
+		18F5181F23D41A9900CDC595 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181123D41A9900CDC595 /* MASCompositeConstraint.m */; };
+		18F5182023D41A9900CDC595 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181223D41A9900CDC595 /* MASConstraintMaker.m */; };
+		18F5182123D41A9900CDC595 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181323D41A9900CDC595 /* MASLayoutConstraint.m */; };
+		18F5182223D41A9900CDC595 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181423D41A9900CDC595 /* NSArray+MASAdditions.m */; };
+		18F5182323D41A9900CDC595 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181523D41A9900CDC595 /* View+MASAdditions.m */; };
+		18F5182423D41A9900CDC595 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181823D41A9900CDC595 /* MASConstraint.m */; };
+		18F5182523D41A9900CDC595 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181A23D41A9900CDC595 /* MASViewConstraint.m */; };
+		18F5182623D41A9900CDC595 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5181B23D41A9900CDC595 /* MASViewAttribute.m */; };
+		18F5183B23D41B5D00CDC595 /* SLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5182923D41B5C00CDC595 /* SLPlayerView.m */; };
+		18F5183C23D41B5D00CDC595 /* SLBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5182A23D41B5C00CDC595 /* SLBrightnessView.m */; };
+		18F5183D23D41B5D00CDC595 /* SLPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5182C23D41B5C00CDC595 /* SLPlayerModel.m */; };
+		18F5183E23D41B5D00CDC595 /* SLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F5182E23D41B5C00CDC595 /* SLPlayer.bundle */; };
+		18F5183F23D41B5D00CDC595 /* GASLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5182F23D41B5C00CDC595 /* GASLPlayer.m */; };
+		18F5184023D41B5D00CDC595 /* SLPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5183023D41B5C00CDC595 /* SLPlayerControlView.m */; };
+		18F5184123D41B5D00CDC595 /* UIView+ControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5183523D41B5C00CDC595 /* UIView+ControlView.m */; };
+		18F5184223D41B5D00CDC595 /* UIViewController+SDPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5183723D41B5C00CDC595 /* UIViewController+SDPlayerRotation.m */; };
+		18F5184623D41B7D00CDC595 /* GSPSVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F5184423D41B7D00CDC595 /* GSPSVideoCell.xib */; };
+		18F5184723D41B7D00CDC595 /* GSPSVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5184523D41B7D00CDC595 /* GSPSVideoCell.m */; };
+		18F5184923D41EA300CDC595 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F5184823D41EA300CDC595 /* CoreServices.framework */; };
+		18F5184C23D4215100CDC595 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5184A23D4215000CDC595 /* UIViewController+Present.m */; };
+		18F5187723D421E800CDC595 /* locationVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5184F23D421E800CDC595 /* locationVideo@2x.png */; };
+		18F5187823D421E800CDC595 /* locationVideo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185023D421E800CDC595 /* locationVideo@3x.png */; };
+		18F5187A23D421E800CDC595 /* flashlightOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185323D421E800CDC595 /* flashlightOff@3x.png */; };
+		18F5187B23D421E800CDC595 /* flashlightOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185423D421E800CDC595 /* flashlightOff@2x.png */; };
+		18F5187D23D421E800CDC595 /* closeVideo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185723D421E800CDC595 /* closeVideo@3x.png */; };
+		18F5187E23D421E800CDC595 /* closeVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185823D421E800CDC595 /* closeVideo@2x.png */; };
+		18F5188023D421E800CDC595 /* sureRecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185B23D421E800CDC595 /* sureRecord@2x.png */; };
+		18F5188123D421E800CDC595 /* sureRecord@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185C23D421E800CDC595 /* sureRecord@3x.png */; };
+		18F5188323D421E800CDC595 /* changeCamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5185F23D421E800CDC595 /* changeCamera@3x.png */; };
+		18F5188423D421E800CDC595 /* changeCamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186023D421E800CDC595 /* changeCamera@2x.png */; };
+		18F5188623D421E800CDC595 /* flashlightOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186323D421E800CDC595 /* flashlightOn@2x.png */; };
+		18F5188723D421E800CDC595 /* flashlightOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186423D421E800CDC595 /* flashlightOn@3x.png */; };
+		18F5188923D421E800CDC595 /* videoStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186723D421E800CDC595 /* videoStop@2x.png */; };
+		18F5188A23D421E800CDC595 /* videoStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186823D421E800CDC595 /* videoStop@3x.png */; };
+		18F5188C23D421E800CDC595 /* videoRecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186B23D421E800CDC595 /* videoRecord@2x.png */; };
+		18F5188E23D421E800CDC595 /* videoRecord@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5186D23D421E800CDC595 /* videoRecord@3x.png */; };
+		18F5189023D421E800CDC595 /* cancelRecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5187023D421E800CDC595 /* cancelRecord@2x.png */; };
+		18F5189223D421E800CDC595 /* cancelRecord@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5187223D421E800CDC595 /* cancelRecord@3x.png */; };
+		18F5189423D421E800CDC595 /* payPauseRecore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5187523D421E800CDC595 /* payPauseRecore@2x.png */; };
+		18F5189523D421E800CDC595 /* payPauseRecore@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5187623D421E800CDC595 /* payPauseRecore@3x.png */; };
+		18F5189823D4256900CDC595 /* icon_image_jsviedo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5189623D4256900CDC595 /* icon_image_jsviedo@2x.png */; };
+		18F5189923D4256900CDC595 /* icon_image_jsviedo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5189723D4256900CDC595 /* icon_image_jsviedo@3x.png */; };
+		18F5189C23D4259200CDC595 /* fb-rubish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5189A23D4259100CDC595 /* fb-rubish@2x.png */; };
+		18F5189D23D4259200CDC595 /* fb-rubish@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F5189B23D4259200CDC595 /* fb-rubish@3x.png */; };
+		18F518A023D429A700CDC595 /* UIViewController+NoSlideBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F5189F23D429A700CDC595 /* UIViewController+NoSlideBack.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F5173523D3F47000CDC595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F5171123D3F46E00CDC595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F5171823D3F46E00CDC595;
+			remoteInfo = GAVideoRecordDemo;
+		};
+		18F5174023D3F47100CDC595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F5171123D3F46E00CDC595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F5171823D3F46E00CDC595;
+			remoteInfo = GAVideoRecordDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F5171923D3F46E00CDC595 /* GAVideoRecordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAVideoRecordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F5171C23D3F46E00CDC595 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18F5171D23D3F46E00CDC595 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18F5172823D3F47000CDC595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F5172B23D3F47000CDC595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F5172D23D3F47000CDC595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F5172E23D3F47000CDC595 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18F5173423D3F47000CDC595 /* GAVideoRecordDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAVideoRecordDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F5173823D3F47000CDC595 /* GAVideoRecordDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAVideoRecordDemoTests.m; sourceTree = "<group>"; };
+		18F5173A23D3F47000CDC595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F5173F23D3F47100CDC595 /* GAVideoRecordDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAVideoRecordDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F5174323D3F47100CDC595 /* GAVideoRecordDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAVideoRecordDemoUITests.m; sourceTree = "<group>"; };
+		18F5174523D3F47100CDC595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F5175223D3F51C00CDC595 /* GSRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRecordProgressView.h; sourceTree = "<group>"; };
+		18F5175323D3F51C00CDC595 /* GSRecordEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRecordEngine.m; sourceTree = "<group>"; };
+		18F5175423D3F51C00CDC595 /* GSRecordVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRecordVideoController.h; sourceTree = "<group>"; };
+		18F5175523D3F51C00CDC595 /* GSRecordEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRecordEncoder.h; sourceTree = "<group>"; };
+		18F5175623D3F51C00CDC595 /* GSRecordVideoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSRecordVideoController.xib; sourceTree = "<group>"; };
+		18F5175723D3F51C00CDC595 /* GSRecordEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRecordEngine.h; sourceTree = "<group>"; };
+		18F5175823D3F51C00CDC595 /* GSRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRecordProgressView.m; sourceTree = "<group>"; };
+		18F5175923D3F51C00CDC595 /* GSRecordEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRecordEncoder.m; sourceTree = "<group>"; };
+		18F5175A23D3F51C00CDC595 /* GSRecordVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRecordVideoController.m; sourceTree = "<group>"; };
+		18F5176123D3F65A00CDC595 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		18F5176323D3F65F00CDC595 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18F5176523D3F66E00CDC595 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18F5176723D3F71800CDC595 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18F5176823D3F88E00CDC595 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		18F5176923D3F88E00CDC595 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		18F5177023D3FD8B00CDC595 /* GSPSVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPSVideoModel.h; sourceTree = "<group>"; };
+		18F5177123D3FD8B00CDC595 /* GSPSVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPSVideoModel.m; sourceTree = "<group>"; };
+		18F517F823D4092900CDC595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		18F517F923D4092900CDC595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		18F517FA23D4092900CDC595 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		18F5180323D41A9900CDC595 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		18F5180423D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		18F5180523D41A9900CDC595 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		18F5180623D41A9900CDC595 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		18F5180723D41A9900CDC595 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		18F5180823D41A9900CDC595 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		18F5180923D41A9900CDC595 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		18F5180A23D41A9900CDC595 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		18F5180B23D41A9900CDC595 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		18F5180C23D41A9900CDC595 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		18F5180D23D41A9900CDC595 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		18F5180E23D41A9900CDC595 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		18F5180F23D41A9900CDC595 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		18F5181023D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		18F5181123D41A9900CDC595 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		18F5181223D41A9900CDC595 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		18F5181323D41A9900CDC595 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		18F5181423D41A9900CDC595 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		18F5181523D41A9900CDC595 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		18F5181623D41A9900CDC595 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		18F5181723D41A9900CDC595 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		18F5181823D41A9900CDC595 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		18F5181923D41A9900CDC595 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		18F5181A23D41A9900CDC595 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		18F5181B23D41A9900CDC595 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		18F5182923D41B5C00CDC595 /* SLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPlayerView.m; sourceTree = "<group>"; };
+		18F5182A23D41B5C00CDC595 /* SLBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBrightnessView.m; sourceTree = "<group>"; };
+		18F5182B23D41B5C00CDC595 /* UIViewController+SDPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SDPlayerRotation.h"; sourceTree = "<group>"; };
+		18F5182C23D41B5C00CDC595 /* SLPlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPlayerModel.m; sourceTree = "<group>"; };
+		18F5182D23D41B5C00CDC595 /* UIView+ControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ControlView.h"; sourceTree = "<group>"; };
+		18F5182E23D41B5C00CDC595 /* SLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SLPlayer.bundle; sourceTree = "<group>"; };
+		18F5182F23D41B5C00CDC595 /* GASLPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASLPlayer.m; sourceTree = "<group>"; };
+		18F5183023D41B5C00CDC595 /* SLPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPlayerControlView.m; sourceTree = "<group>"; };
+		18F5183123D41B5C00CDC595 /* SLBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBrightnessView.h; sourceTree = "<group>"; };
+		18F5183223D41B5C00CDC595 /* SLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPlayerView.h; sourceTree = "<group>"; };
+		18F5183323D41B5C00CDC595 /* SLPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPlayer.h; sourceTree = "<group>"; };
+		18F5183423D41B5C00CDC595 /* SLPlayerControlViewDelagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPlayerControlViewDelagate.h; sourceTree = "<group>"; };
+		18F5183523D41B5C00CDC595 /* UIView+ControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ControlView.m"; sourceTree = "<group>"; };
+		18F5183623D41B5C00CDC595 /* SLPlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPlayerModel.h; sourceTree = "<group>"; };
+		18F5183723D41B5C00CDC595 /* UIViewController+SDPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SDPlayerRotation.m"; sourceTree = "<group>"; };
+		18F5183823D41B5C00CDC595 /* SLMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMarco.h; sourceTree = "<group>"; };
+		18F5183923D41B5C00CDC595 /* GASLPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASLPlayer.h; sourceTree = "<group>"; };
+		18F5184323D41B7D00CDC595 /* GSPSVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPSVideoCell.h; sourceTree = "<group>"; };
+		18F5184423D41B7D00CDC595 /* GSPSVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSPSVideoCell.xib; sourceTree = "<group>"; };
+		18F5184523D41B7D00CDC595 /* GSPSVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPSVideoCell.m; sourceTree = "<group>"; };
+		18F5184823D41EA300CDC595 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		18F5184A23D4215000CDC595 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
+		18F5184B23D4215100CDC595 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		18F5184F23D421E800CDC595 /* locationVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationVideo@2x.png"; sourceTree = "<group>"; };
+		18F5185023D421E800CDC595 /* locationVideo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationVideo@3x.png"; sourceTree = "<group>"; };
+		18F5185323D421E800CDC595 /* flashlightOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightOff@3x.png"; sourceTree = "<group>"; };
+		18F5185423D421E800CDC595 /* flashlightOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightOff@2x.png"; sourceTree = "<group>"; };
+		18F5185723D421E800CDC595 /* closeVideo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeVideo@3x.png"; sourceTree = "<group>"; };
+		18F5185823D421E800CDC595 /* closeVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeVideo@2x.png"; sourceTree = "<group>"; };
+		18F5185B23D421E800CDC595 /* sureRecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sureRecord@2x.png"; sourceTree = "<group>"; };
+		18F5185C23D421E800CDC595 /* sureRecord@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sureRecord@3x.png"; sourceTree = "<group>"; };
+		18F5185F23D421E800CDC595 /* changeCamera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "changeCamera@3x.png"; sourceTree = "<group>"; };
+		18F5186023D421E800CDC595 /* changeCamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "changeCamera@2x.png"; sourceTree = "<group>"; };
+		18F5186323D421E800CDC595 /* flashlightOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightOn@2x.png"; sourceTree = "<group>"; };
+		18F5186423D421E800CDC595 /* flashlightOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlightOn@3x.png"; sourceTree = "<group>"; };
+		18F5186723D421E800CDC595 /* videoStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoStop@2x.png"; sourceTree = "<group>"; };
+		18F5186823D421E800CDC595 /* videoStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoStop@3x.png"; sourceTree = "<group>"; };
+		18F5186B23D421E800CDC595 /* videoRecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoRecord@2x.png"; sourceTree = "<group>"; };
+		18F5186D23D421E800CDC595 /* videoRecord@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoRecord@3x.png"; sourceTree = "<group>"; };
+		18F5187023D421E800CDC595 /* cancelRecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancelRecord@2x.png"; sourceTree = "<group>"; };
+		18F5187223D421E800CDC595 /* cancelRecord@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancelRecord@3x.png"; sourceTree = "<group>"; };
+		18F5187523D421E800CDC595 /* payPauseRecore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payPauseRecore@2x.png"; sourceTree = "<group>"; };
+		18F5187623D421E800CDC595 /* payPauseRecore@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "payPauseRecore@3x.png"; sourceTree = "<group>"; };
+		18F5189623D4256900CDC595 /* icon_image_jsviedo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image_jsviedo@2x.png"; sourceTree = "<group>"; };
+		18F5189723D4256900CDC595 /* icon_image_jsviedo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image_jsviedo@3x.png"; sourceTree = "<group>"; };
+		18F5189A23D4259100CDC595 /* fb-rubish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-rubish@2x.png"; sourceTree = "<group>"; };
+		18F5189B23D4259200CDC595 /* fb-rubish@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-rubish@3x.png"; sourceTree = "<group>"; };
+		18F5189E23D429A700CDC595 /* UIViewController+NoSlideBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NoSlideBack.h"; sourceTree = "<group>"; };
+		18F5189F23D429A700CDC595 /* UIViewController+NoSlideBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NoSlideBack.m"; sourceTree = "<group>"; };
+		18F518A123D42A8C00CDC595 /* SLPlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPlayerControlView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F5171623D3F46E00CDC595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5184923D41EA300CDC595 /* CoreServices.framework in Frameworks */,
+				18F5176623D3F66E00CDC595 /* MobileCoreServices.framework in Frameworks */,
+				18F5176423D3F65F00CDC595 /* AVFoundation.framework in Frameworks */,
+				18F5176223D3F65A00CDC595 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173123D3F47000CDC595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173C23D3F47000CDC595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F5171023D3F46E00CDC595 = {
+			isa = PBXGroup;
+			children = (
+				18F5171B23D3F46E00CDC595 /* GAVideoRecordDemo */,
+				18F5173723D3F47000CDC595 /* GAVideoRecordDemoTests */,
+				18F5174223D3F47100CDC595 /* GAVideoRecordDemoUITests */,
+				18F5171A23D3F46E00CDC595 /* Products */,
+				18F5176023D3F65A00CDC595 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18F5171A23D3F46E00CDC595 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F5171923D3F46E00CDC595 /* GAVideoRecordDemo.app */,
+				18F5173423D3F47000CDC595 /* GAVideoRecordDemoTests.xctest */,
+				18F5173F23D3F47100CDC595 /* GAVideoRecordDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F5171B23D3F46E00CDC595 /* GAVideoRecordDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18F5171C23D3F46E00CDC595 /* AppDelegate.h */,
+				18F5171D23D3F46E00CDC595 /* AppDelegate.m */,
+				18F5176723D3F71800CDC595 /* PrefixHeader.pch */,
+				18F518A223D42AD300CDC595 /* Home */,
+				18F518A723D42BA600CDC595 /* Category */,
+				18F5175123D3F51C00CDC595 /* GSVideoRecord */,
+				18F5182823D41B5C00CDC595 /* SLPlayer */,
+				18F5180223D41A9900CDC595 /* Masonry */,
+				18F5172823D3F47000CDC595 /* Assets.xcassets */,
+				18F5172A23D3F47000CDC595 /* LaunchScreen.storyboard */,
+				18F5172D23D3F47000CDC595 /* Info.plist */,
+				18F5172E23D3F47000CDC595 /* main.m */,
+			);
+			path = GAVideoRecordDemo;
+			sourceTree = "<group>";
+		};
+		18F5173723D3F47000CDC595 /* GAVideoRecordDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F5173823D3F47000CDC595 /* GAVideoRecordDemoTests.m */,
+				18F5173A23D3F47000CDC595 /* Info.plist */,
+			);
+			path = GAVideoRecordDemoTests;
+			sourceTree = "<group>";
+		};
+		18F5174223D3F47100CDC595 /* GAVideoRecordDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F5174323D3F47100CDC595 /* GAVideoRecordDemoUITests.m */,
+				18F5174523D3F47100CDC595 /* Info.plist */,
+			);
+			path = GAVideoRecordDemoUITests;
+			sourceTree = "<group>";
+		};
+		18F5175123D3F51C00CDC595 /* GSVideoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				18F5175423D3F51C00CDC595 /* GSRecordVideoController.h */,
+				18F5175A23D3F51C00CDC595 /* GSRecordVideoController.m */,
+				18F5175623D3F51C00CDC595 /* GSRecordVideoController.xib */,
+				18F5175223D3F51C00CDC595 /* GSRecordProgressView.h */,
+				18F5175823D3F51C00CDC595 /* GSRecordProgressView.m */,
+				18F5175723D3F51C00CDC595 /* GSRecordEngine.h */,
+				18F5175323D3F51C00CDC595 /* GSRecordEngine.m */,
+				18F5175523D3F51C00CDC595 /* GSRecordEncoder.h */,
+				18F5175923D3F51C00CDC595 /* GSRecordEncoder.m */,
+				18F5184D23D421E800CDC595 /* Resource */,
+			);
+			path = GSVideoRecord;
+			sourceTree = "<group>";
+		};
+		18F5176023D3F65A00CDC595 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F5184823D41EA300CDC595 /* CoreServices.framework */,
+				18F5176523D3F66E00CDC595 /* MobileCoreServices.framework */,
+				18F5176323D3F65F00CDC595 /* AVFoundation.framework */,
+				18F5176123D3F65A00CDC595 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F5180223D41A9900CDC595 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				18F5180323D41A9900CDC595 /* MASCompositeConstraint.h */,
+				18F5180423D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				18F5180523D41A9900CDC595 /* MASConstraint+Private.h */,
+				18F5180623D41A9900CDC595 /* MASLayoutConstraint.h */,
+				18F5180723D41A9900CDC595 /* NSArray+MASShorthandAdditions.h */,
+				18F5180823D41A9900CDC595 /* MASConstraintMaker.h */,
+				18F5180923D41A9900CDC595 /* View+MASAdditions.h */,
+				18F5180A23D41A9900CDC595 /* NSArray+MASAdditions.h */,
+				18F5180B23D41A9900CDC595 /* MASUtilities.h */,
+				18F5180C23D41A9900CDC595 /* MASViewAttribute.h */,
+				18F5180D23D41A9900CDC595 /* ViewController+MASAdditions.m */,
+				18F5180E23D41A9900CDC595 /* MASViewConstraint.h */,
+				18F5180F23D41A9900CDC595 /* MASConstraint.h */,
+				18F5181023D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				18F5181123D41A9900CDC595 /* MASCompositeConstraint.m */,
+				18F5181223D41A9900CDC595 /* MASConstraintMaker.m */,
+				18F5181323D41A9900CDC595 /* MASLayoutConstraint.m */,
+				18F5181423D41A9900CDC595 /* NSArray+MASAdditions.m */,
+				18F5181523D41A9900CDC595 /* View+MASAdditions.m */,
+				18F5181623D41A9900CDC595 /* View+MASShorthandAdditions.h */,
+				18F5181723D41A9900CDC595 /* Masonry.h */,
+				18F5181823D41A9900CDC595 /* MASConstraint.m */,
+				18F5181923D41A9900CDC595 /* ViewController+MASAdditions.h */,
+				18F5181A23D41A9900CDC595 /* MASViewConstraint.m */,
+				18F5181B23D41A9900CDC595 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		18F5182823D41B5C00CDC595 /* SLPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				18F5183923D41B5C00CDC595 /* GASLPlayer.h */,
+				18F5182F23D41B5C00CDC595 /* GASLPlayer.m */,
+				18F5183323D41B5C00CDC595 /* SLPlayer.h */,
+				18F5183223D41B5C00CDC595 /* SLPlayerView.h */,
+				18F5182923D41B5C00CDC595 /* SLPlayerView.m */,
+				18F5183123D41B5C00CDC595 /* SLBrightnessView.h */,
+				18F5182A23D41B5C00CDC595 /* SLBrightnessView.m */,
+				18F5182B23D41B5C00CDC595 /* UIViewController+SDPlayerRotation.h */,
+				18F5183723D41B5C00CDC595 /* UIViewController+SDPlayerRotation.m */,
+				18F5183623D41B5C00CDC595 /* SLPlayerModel.h */,
+				18F5182C23D41B5C00CDC595 /* SLPlayerModel.m */,
+				18F5182D23D41B5C00CDC595 /* UIView+ControlView.h */,
+				18F5183523D41B5C00CDC595 /* UIView+ControlView.m */,
+				18F5182E23D41B5C00CDC595 /* SLPlayer.bundle */,
+				18F518A123D42A8C00CDC595 /* SLPlayerControlView.h */,
+				18F5183023D41B5C00CDC595 /* SLPlayerControlView.m */,
+				18F5183423D41B5C00CDC595 /* SLPlayerControlViewDelagate.h */,
+				18F5183823D41B5C00CDC595 /* SLMarco.h */,
+			);
+			path = SLPlayer;
+			sourceTree = "<group>";
+		};
+		18F5184D23D421E800CDC595 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18F5184F23D421E800CDC595 /* locationVideo@2x.png */,
+				18F5185023D421E800CDC595 /* locationVideo@3x.png */,
+				18F5185323D421E800CDC595 /* flashlightOff@3x.png */,
+				18F5185423D421E800CDC595 /* flashlightOff@2x.png */,
+				18F5185723D421E800CDC595 /* closeVideo@3x.png */,
+				18F5185823D421E800CDC595 /* closeVideo@2x.png */,
+				18F5185B23D421E800CDC595 /* sureRecord@2x.png */,
+				18F5185C23D421E800CDC595 /* sureRecord@3x.png */,
+				18F5185F23D421E800CDC595 /* changeCamera@3x.png */,
+				18F5186023D421E800CDC595 /* changeCamera@2x.png */,
+				18F5186323D421E800CDC595 /* flashlightOn@2x.png */,
+				18F5186423D421E800CDC595 /* flashlightOn@3x.png */,
+				18F5186723D421E800CDC595 /* videoStop@2x.png */,
+				18F5186823D421E800CDC595 /* videoStop@3x.png */,
+				18F5186B23D421E800CDC595 /* videoRecord@2x.png */,
+				18F5186D23D421E800CDC595 /* videoRecord@3x.png */,
+				18F5187023D421E800CDC595 /* cancelRecord@2x.png */,
+				18F5187223D421E800CDC595 /* cancelRecord@3x.png */,
+				18F5187523D421E800CDC595 /* payPauseRecore@2x.png */,
+				18F5187623D421E800CDC595 /* payPauseRecore@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18F518A223D42AD300CDC595 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18F518A523D42AE800CDC595 /* Controller */,
+				18F518A423D42AE300CDC595 /* Model */,
+				18F518A323D42ADD00CDC595 /* View */,
+				18F518A623D42AFF00CDC595 /* Resource */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18F518A323D42ADD00CDC595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F5184323D41B7D00CDC595 /* GSPSVideoCell.h */,
+				18F5184523D41B7D00CDC595 /* GSPSVideoCell.m */,
+				18F5184423D41B7D00CDC595 /* GSPSVideoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F518A423D42AE300CDC595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18F5177023D3FD8B00CDC595 /* GSPSVideoModel.h */,
+				18F5177123D3FD8B00CDC595 /* GSPSVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18F518A523D42AE800CDC595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F517F823D4092900CDC595 /* HomeViewController.h */,
+				18F517F923D4092900CDC595 /* HomeViewController.m */,
+				18F517FA23D4092900CDC595 /* HomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F518A623D42AFF00CDC595 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18F5189A23D4259100CDC595 /* fb-rubish@2x.png */,
+				18F5189B23D4259200CDC595 /* fb-rubish@3x.png */,
+				18F5189623D4256900CDC595 /* icon_image_jsviedo@2x.png */,
+				18F5189723D4256900CDC595 /* icon_image_jsviedo@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18F518A723D42BA600CDC595 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18F5176823D3F88E00CDC595 /* UIView+Toast.h */,
+				18F5176923D3F88E00CDC595 /* UIView+Toast.m */,
+				18F5184B23D4215100CDC595 /* UIViewController+Present.h */,
+				18F5184A23D4215000CDC595 /* UIViewController+Present.m */,
+				18F5189E23D429A700CDC595 /* UIViewController+NoSlideBack.h */,
+				18F5189F23D429A700CDC595 /* UIViewController+NoSlideBack.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F5171823D3F46E00CDC595 /* GAVideoRecordDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F5174823D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemo" */;
+			buildPhases = (
+				18F5171523D3F46E00CDC595 /* Sources */,
+				18F5171623D3F46E00CDC595 /* Frameworks */,
+				18F5171723D3F46E00CDC595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAVideoRecordDemo;
+			productName = GAVideoRecordDemo;
+			productReference = 18F5171923D3F46E00CDC595 /* GAVideoRecordDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F5173323D3F47000CDC595 /* GAVideoRecordDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F5174B23D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemoTests" */;
+			buildPhases = (
+				18F5173023D3F47000CDC595 /* Sources */,
+				18F5173123D3F47000CDC595 /* Frameworks */,
+				18F5173223D3F47000CDC595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F5173623D3F47000CDC595 /* PBXTargetDependency */,
+			);
+			name = GAVideoRecordDemoTests;
+			productName = GAVideoRecordDemoTests;
+			productReference = 18F5173423D3F47000CDC595 /* GAVideoRecordDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F5173E23D3F47000CDC595 /* GAVideoRecordDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F5174E23D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemoUITests" */;
+			buildPhases = (
+				18F5173B23D3F47000CDC595 /* Sources */,
+				18F5173C23D3F47000CDC595 /* Frameworks */,
+				18F5173D23D3F47000CDC595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F5174123D3F47100CDC595 /* PBXTargetDependency */,
+			);
+			name = GAVideoRecordDemoUITests;
+			productName = GAVideoRecordDemoUITests;
+			productReference = 18F5173F23D3F47100CDC595 /* GAVideoRecordDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F5171123D3F46E00CDC595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18F5171823D3F46E00CDC595 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					18F5173323D3F47000CDC595 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 18F5171823D3F46E00CDC595;
+					};
+					18F5173E23D3F47000CDC595 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 18F5171823D3F46E00CDC595;
+					};
+				};
+			};
+			buildConfigurationList = 18F5171423D3F46E00CDC595 /* Build configuration list for PBXProject "GAVideoRecordDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F5171023D3F46E00CDC595;
+			productRefGroup = 18F5171A23D3F46E00CDC595 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F5171823D3F46E00CDC595 /* GAVideoRecordDemo */,
+				18F5173323D3F47000CDC595 /* GAVideoRecordDemoTests */,
+				18F5173E23D3F47000CDC595 /* GAVideoRecordDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F5171723D3F46E00CDC595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5175C23D3F51C00CDC595 /* GSRecordVideoController.xib in Resources */,
+				18F5189923D4256900CDC595 /* icon_image_jsviedo@3x.png in Resources */,
+				18F5188123D421E800CDC595 /* sureRecord@3x.png in Resources */,
+				18F5172C23D3F47000CDC595 /* LaunchScreen.storyboard in Resources */,
+				18F5189823D4256900CDC595 /* icon_image_jsviedo@2x.png in Resources */,
+				18F5189223D421E800CDC595 /* cancelRecord@3x.png in Resources */,
+				18F5189523D421E800CDC595 /* payPauseRecore@3x.png in Resources */,
+				18F5189023D421E800CDC595 /* cancelRecord@2x.png in Resources */,
+				18F5189423D421E800CDC595 /* payPauseRecore@2x.png in Resources */,
+				18F5187B23D421E800CDC595 /* flashlightOff@2x.png in Resources */,
+				18F5189D23D4259200CDC595 /* fb-rubish@3x.png in Resources */,
+				18F5184623D41B7D00CDC595 /* GSPSVideoCell.xib in Resources */,
+				18F5188C23D421E800CDC595 /* videoRecord@2x.png in Resources */,
+				18F5188E23D421E800CDC595 /* videoRecord@3x.png in Resources */,
+				18F5187823D421E800CDC595 /* locationVideo@3x.png in Resources */,
+				18F5187D23D421E800CDC595 /* closeVideo@3x.png in Resources */,
+				18F5188323D421E800CDC595 /* changeCamera@3x.png in Resources */,
+				18F517FC23D4092900CDC595 /* HomeViewController.xib in Resources */,
+				18F5172923D3F47000CDC595 /* Assets.xcassets in Resources */,
+				18F5183E23D41B5D00CDC595 /* SLPlayer.bundle in Resources */,
+				18F5187723D421E800CDC595 /* locationVideo@2x.png in Resources */,
+				18F5189C23D4259200CDC595 /* fb-rubish@2x.png in Resources */,
+				18F5187A23D421E800CDC595 /* flashlightOff@3x.png in Resources */,
+				18F5188723D421E800CDC595 /* flashlightOn@3x.png in Resources */,
+				18F5188923D421E800CDC595 /* videoStop@2x.png in Resources */,
+				18F5188A23D421E800CDC595 /* videoStop@3x.png in Resources */,
+				18F5188623D421E800CDC595 /* flashlightOn@2x.png in Resources */,
+				18F5188423D421E800CDC595 /* changeCamera@2x.png in Resources */,
+				18F5188023D421E800CDC595 /* sureRecord@2x.png in Resources */,
+				18F5187E23D421E800CDC595 /* closeVideo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173223D3F47000CDC595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173D23D3F47000CDC595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F5171523D3F46E00CDC595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5176A23D3F88E00CDC595 /* UIView+Toast.m in Sources */,
+				18F5183C23D41B5D00CDC595 /* SLBrightnessView.m in Sources */,
+				18F5175F23D3F51C00CDC595 /* GSRecordVideoController.m in Sources */,
+				18F5182223D41A9900CDC595 /* NSArray+MASAdditions.m in Sources */,
+				18F517FB23D4092900CDC595 /* HomeViewController.m in Sources */,
+				18F5182323D41A9900CDC595 /* View+MASAdditions.m in Sources */,
+				18F5184C23D4215100CDC595 /* UIViewController+Present.m in Sources */,
+				18F5181D23D41A9900CDC595 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18F5181F23D41A9900CDC595 /* MASCompositeConstraint.m in Sources */,
+				18F5184023D41B5D00CDC595 /* SLPlayerControlView.m in Sources */,
+				18F5171E23D3F46E00CDC595 /* AppDelegate.m in Sources */,
+				18F5183D23D41B5D00CDC595 /* SLPlayerModel.m in Sources */,
+				18F5184723D41B7D00CDC595 /* GSPSVideoCell.m in Sources */,
+				18F5183B23D41B5D00CDC595 /* SLPlayerView.m in Sources */,
+				18F5181E23D41A9900CDC595 /* ViewController+MASAdditions.m in Sources */,
+				18F5182623D41A9900CDC595 /* MASViewAttribute.m in Sources */,
+				18F5182523D41A9900CDC595 /* MASViewConstraint.m in Sources */,
+				18F5183F23D41B5D00CDC595 /* GASLPlayer.m in Sources */,
+				18F5184223D41B5D00CDC595 /* UIViewController+SDPlayerRotation.m in Sources */,
+				18F5175D23D3F51C00CDC595 /* GSRecordProgressView.m in Sources */,
+				18F5182023D41A9900CDC595 /* MASConstraintMaker.m in Sources */,
+				18F5175B23D3F51C00CDC595 /* GSRecordEngine.m in Sources */,
+				18F5184123D41B5D00CDC595 /* UIView+ControlView.m in Sources */,
+				18F5182123D41A9900CDC595 /* MASLayoutConstraint.m in Sources */,
+				18F5172F23D3F47000CDC595 /* main.m in Sources */,
+				18F518A023D429A700CDC595 /* UIViewController+NoSlideBack.m in Sources */,
+				18F5177223D3FD8B00CDC595 /* GSPSVideoModel.m in Sources */,
+				18F5182423D41A9900CDC595 /* MASConstraint.m in Sources */,
+				18F5175E23D3F51C00CDC595 /* GSRecordEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173023D3F47000CDC595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5173923D3F47000CDC595 /* GAVideoRecordDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F5173B23D3F47000CDC595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F5174423D3F47100CDC595 /* GAVideoRecordDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F5173623D3F47000CDC595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F5171823D3F46E00CDC595 /* GAVideoRecordDemo */;
+			targetProxy = 18F5173523D3F47000CDC595 /* PBXContainerItemProxy */;
+		};
+		18F5174123D3F47100CDC595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F5171823D3F46E00CDC595 /* GAVideoRecordDemo */;
+			targetProxy = 18F5174023D3F47100CDC595 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18F5172A23D3F47000CDC595 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F5172B23D3F47000CDC595 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F5174623D3F47100CDC595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18F5174723D3F47100CDC595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F5174923D3F47100CDC595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q442MYNS7Z;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = GAVideoRecordDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = GAVideoRecordDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F5174A23D3F47100CDC595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q442MYNS7Z;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = GAVideoRecordDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = GAVideoRecordDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18F5174C23D3F47100CDC595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GAVideoRecordDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAVideoRecordDemo.app/GAVideoRecordDemo";
+			};
+			name = Debug;
+		};
+		18F5174D23D3F47100CDC595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GAVideoRecordDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAVideoRecordDemo.app/GAVideoRecordDemo";
+			};
+			name = Release;
+		};
+		18F5174F23D3F47100CDC595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GAVideoRecordDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GAVideoRecordDemo;
+			};
+			name = Debug;
+		};
+		18F5175023D3F47100CDC595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GAVideoRecordDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apple.GAVideoRecordDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GAVideoRecordDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F5171423D3F46E00CDC595 /* Build configuration list for PBXProject "GAVideoRecordDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F5174623D3F47100CDC595 /* Debug */,
+				18F5174723D3F47100CDC595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F5174823D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F5174923D3F47100CDC595 /* Debug */,
+				18F5174A23D3F47100CDC595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F5174B23D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F5174C23D3F47100CDC595 /* Debug */,
+				18F5174D23D3F47100CDC595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F5174E23D3F47100CDC595 /* Build configuration list for PBXNativeTarget "GAVideoRecordDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F5174F23D3F47100CDC595 /* Debug */,
+				18F5175023D3F47100CDC595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F5171123D3F46E00CDC595 /* Project object */;
+}

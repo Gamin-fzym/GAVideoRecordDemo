@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  GAVideoRecordDemo
+//
+//  Created by apple on 2020/1/19.
+//  Copyright © 2020 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "SLPlayer.h"
+
+#define KWindow [UIApplication sharedApplication].keyWindow
+
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+
+#define iPhoneX (IS_IPHONE && ScreenHeight>=812)  //iPhoneX系列
+// 判断当前的iPhone设备/系统版本
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+// 视频录制 最大时长
+#define GS_Video_Limit_Seconds 120
+
+// 屏幕的宽
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+// 屏幕的高
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#endif /* PrefixHeader_pch */
